@@ -1,0 +1,175 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador. 
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    background-color: #fbfbfb;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    line-height: 1,2;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid black;
+    box-shadow: 2px  #242424;   
+}
+
+.logo {
+    width: 120px;
+}
+/* Para quitar los puntos a los items de listas */
+ul#menu {
+    list-style: none;
+    display: flex;
+   }
+
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    height: 100vh;
+    
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+section#inicio {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    
+}
+
+.foto-presentacion {
+    width: 400px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+/*  article {
+    flex-direction: row;
+    justify-content: center;
+    padding: 80px;
+    max-width: 600px;
+        
+}*/
+
+
+article#contacto {
+    text-align: center;
+    margin-left: 20%;
+    padding: 10px;
+    background: rgba(175, 89, 158, 0.3);
+    border-radius: 15px;
+    width: 100vh;
+    height: min-content;
+
+    
+}
+
+h2 {
+    font-size: 32px;
+}
+
+figure#iconos{
+    display: flex;
+    justify-content: center;    
+}
+
+.imagen:hover, .item:hover{
+    background: rgba(175, 89, 158, 0.3);
+    scroll-behavior: smooth;
+    height: 50px;    
+
+}
+
+.imagen {
+    width: 50px;
+    padding: 20px;
+}
+
+
+.boton {
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.item {
+    font-size: 20px;
+    }
+
+.boton, footer {
+    background-color: #af599e;
+    color: #fbfbfb;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
+
+
+
